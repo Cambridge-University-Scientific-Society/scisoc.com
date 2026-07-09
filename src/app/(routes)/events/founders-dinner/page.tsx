@@ -6,9 +6,11 @@ export default function FoundersDinnerPage() {
     <EventPageShell
       title="Annual Founders' Dinner"
       slides={[
-        { src: "/events/formal.JPG", alt: "Founders' Dinner photo 1" },
-        { src: "/events/garden-party.jpg", alt: "Founders' Dinner photo 2" },
-        { src: "/events/bridgemas.JPG", alt: "Founders' Dinner photo 3" },
+        { src: "/events/dinner/2.jpg", alt: "Founders' Dinner photo 2" },
+        { src: "/events/dinner/3.jpg", alt: "Founders' Dinner photo 3" },
+        { src: "/events/dinner/4.jpg", alt: "Founders' Dinner photo 4" },
+        { src: "/events/dinner/5.jpg", alt: "Founders' Dinner photo 5" },
+        { src: "/events/dinner/1.jpg", alt: "Founders' Dinner photo 1" },
       ]}
       intro={
         <p>

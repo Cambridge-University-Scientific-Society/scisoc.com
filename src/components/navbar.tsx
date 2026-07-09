@@ -107,17 +107,14 @@ export default function Navbar() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Sponsors & Partners</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="w-[200px] gap-3 p-4 md:w-[300px] lg:w-[400px]">
-                  <ListItem href="/sponsors" title="Sponsors">
-                    Our sponsors and supporters
-                  </ListItem>
-                  <ListItem href="/partners" title="Partners">
-                    Enjoy discounts with our partners
-                  </ListItem>
-                </ul>
-              </NavigationMenuContent>
+              <NavigationMenuLink asChild>
+                <Link
+                  href="/sponsors"
+                  className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Sponsors
+                </Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
 
           </NavigationMenuList>
@@ -221,24 +218,11 @@ export default function Navbar() {
                 </DropdownMenuSubContent>
               </DropdownMenuSub>
 
-              {/* Sponsors & Partners submenu */}
-              <DropdownMenuSub>
-                <DropdownMenuSubTrigger className="cursor-pointer">
-                  Sponsors & Partners
-                </DropdownMenuSubTrigger>
-                <DropdownMenuSubContent>
-                  <DropdownMenuItem asChild>
-                    <Link href="/sponsors" className="cursor-pointer">
-                      Sponsors
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <Link href="/partners" className="cursor-pointer">
-                      Partners
-                    </Link>
-                  </DropdownMenuItem>
-                </DropdownMenuSubContent>
-              </DropdownMenuSub>
+              <DropdownMenuItem asChild>
+                <Link href="/sponsors" className="cursor-pointer">
+                  Sponsors
+                </Link>
+              </DropdownMenuItem>
 
               <DropdownMenuSeparator />
               <DropdownMenuItem asChild className="sm:hidden">

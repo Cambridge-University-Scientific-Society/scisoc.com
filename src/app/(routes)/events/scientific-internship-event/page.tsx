@@ -5,9 +5,9 @@ export default function ScientificInternshipEventPage() {
     <EventPageShell
       title="The Scientific Internship Event"
       slides={[
-        { src: "/events/termcard-placeholder.svg", alt: "Scientific Internship Event placeholder 1" },
-        { src: "/events/ori.jpg", alt: "Scientific Internship Event placeholder 2" },
-        { src: "/events/kopitalk.jpg", alt: "Scientific Internship Event placeholder 3" },
+        { src: "/events/intern/3.jpg", alt: "Scientific Internship Event placeholder 3" },
+        { src: "/events/intern/2.jpg", alt: "Scientific Internship Event placeholder 2" },
+        { src: "/events/intern/l.jpg", alt: "Scientific Internship Event placeholder 1" },
       ]}
       intro={
         <p>

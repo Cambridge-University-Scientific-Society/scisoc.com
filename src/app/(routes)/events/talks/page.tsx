@@ -6,9 +6,9 @@ export default function TalksPage() {
     <EventPageShell
       title="Talks"
       slides={[
-        { src: "/events/ori.jpg", alt: "Talks event photo 1" },
-        { src: "/events/kopitalk.jpg", alt: "Talks event photo 2" },
-        { src: "/events/bridgemas.JPG", alt: "Talks event photo 3" },
+        { src: "/events/talks/1.jpg", alt: "Talks event photo 1" },
+        { src: "/events/talks/2.jpg", alt: "Talks event photo 2" },
+        { src: "/events/talks/3.jpg", alt: "Talks event photo 3" },
       ]}
       intro={
         <>

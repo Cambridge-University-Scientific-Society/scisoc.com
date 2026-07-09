@@ -10,6 +10,20 @@ export interface PastCommittee {
 
 export const pastCommittees: PastCommittee[] = [
   {
+    year: "2025-2026",
+    roles: [
+      { role: "Co-presidents", members: "Nestor Novakovic (St Catharine's), Jeffrey Zhang (Christ's)" },
+      { role: "Secretary", members: "Yu Heng Hew (St Edmund's)" },
+      { role: "Treasurer", members: "Jiayi Li (Emmanuel)" },
+      { role: "Publicity", members: "Samud Shetty (Lucy Cavendish), Xiang Yang (Wolfson)" },
+      { role: "Events", members: "Danyaal Sattar (King's), Alexander Gillan (Trinity Hall)" },
+      { role: "Logistics", members: "Nicholas Law (Trinity), Zhilin Pan (Robinson)" },
+      { role: "Sponsorship", members: "Jason Aik (St Edmund's)" },
+      { role: "Technical Affairs", members: "Samuel Li (St John's)" },
+      { role: "Speakers Affairs", members: "Abi Falkous (Newnham)" },
+    ],
+  },
+  {
     year: "2024-2025",
     roles: [
       { role: "Co-presidents", members: "Cameron Goh (Emmanuel), Drishtant Chakraborty (Downing)" },

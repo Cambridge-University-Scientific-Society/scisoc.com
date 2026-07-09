@@ -14,28 +14,28 @@ export function SponsorCard({ sponsor }: SponsorCardProps) {
       case "platinum":
         return {
           border: "border-gray-300 dark:border-gray-600",
-          cardBackground: "bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800",
+          cardBackground: "bg-white dark:bg-white",
           textColor: "text-muted-foreground",
           label: "PLATINUM"
         };
       case "gold":
         return {
           border: "border-yellow-300 dark:border-yellow-600",
-          cardBackground: "bg-gradient-to-br from-yellow-50 to-amber-50 dark:from-yellow-950/30 dark:to-amber-950/30",
+          cardBackground: "bg-white dark:bg-white",
           textColor: "text-yellow-600 dark:text-yellow-400",
           label: "GOLD"
         };
       case "silver":
         return {
           border: "border-gray-200 dark:border-gray-700",
-          cardBackground: "bg-gradient-to-br from-gray-50 to-zinc-50 dark:from-gray-900 dark:to-zinc-900",
+          cardBackground: "bg-white dark:bg-white",
           textColor: "text-muted-foreground",
           label: "SILVER"
         };
       default:
         return {
           border: "border-gray-200 dark:border-gray-700",
-          cardBackground: "bg-gradient-to-br from-gray-50 to-zinc-50 dark:from-gray-900 dark:to-zinc-900",
+          cardBackground: "bg-white dark:bg-white",
           textColor: "text-muted-foreground",
           label: "SPONSOR"
         };
@@ -60,10 +60,10 @@ export function SponsorCard({ sponsor }: SponsorCardProps) {
       </CardHeader>
       <CardContent className="flex flex-col h-full">
         <p className="text-muted-foreground text-sm mb-4 flex-grow">
-          {sponsor.description}
+          {sponsor.name}
         </p>
-        <Link href={`/sponsors/${sponsor.slug}`} className="mt-auto">
-          <Button variant="outline" className="w-full">Learn More</Button>
+        <Link href={`/sponsors#${sponsor.id}`} className="mt-auto">
+          <Button variant="outline" className="w-full">View on Sponsors Page</Button>
         </Link>
       </CardContent>
     </Card>

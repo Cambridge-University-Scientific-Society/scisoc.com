@@ -7,8 +7,8 @@ import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "CUMSA - Cambridge University Singapore and Malaysia Society",
-  description: "Official website of the Cambridge University Singapore and Malaysia Society (CUMSA)",
+  title: "SciSoc - Cambridge University Scientific Society",
+  description: "Official website of the Cambridge University Scientific Society (SciSoc)",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

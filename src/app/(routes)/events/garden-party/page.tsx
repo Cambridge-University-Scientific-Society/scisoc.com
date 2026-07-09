@@ -5,9 +5,12 @@ export default function GardenPartyPage() {
     <EventPageShell
       title="Garden Party"
       slides={[
-        { src: "/events/garden-party.jpg", alt: "Garden Party photo 1" },
-        { src: "/events/bridgemas.JPG", alt: "Garden Party photo 2" },
-        { src: "/events/formal.JPG", alt: "Garden Party photo 3" },
+        { src: "/events/garden/1.jpg", alt: "Garden Party photo 1" },
+        { src: "/events/garden/2.jpg", alt: "Garden Party photo 2" },
+        { src: "/events/garden/3.jpg", alt: "Garden Party photo 3" },
+        { src: "/events/garden/4.jpg", alt: "Garden Party photo 4" },
+        { src: "/events/garden/5.jpg", alt: "Garden Party photo 5" },
+        { src: "/events/garden/6.jpg", alt: "Garden Party photo 6" },
       ]}
       intro={
         <>

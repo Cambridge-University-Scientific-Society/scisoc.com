@@ -71,7 +71,7 @@ export default function EventsPage() {
 
               <div className="overflow-hidden rounded-2xl border border-border bg-muted/20 shadow-sm">
                 <Image
-                  src="/events/termcard-placeholder.svg"
+                  src="/termcard.png"
                   alt="Termcard placeholder"
                   width={1600}
                   height={900}

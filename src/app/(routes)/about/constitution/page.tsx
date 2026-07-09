@@ -35,6 +35,9 @@ export default function ConstitutionPage() {
             />
 
             <div className="space-y-6">
+              <p> 
+                Some of the key points of this document include: 
+              </p>
               {constitutionSections.map((section) => (
                 <section key={section.title} className="space-y-3">
                   <h2 className="text-2xl font-light text-muted-foreground">

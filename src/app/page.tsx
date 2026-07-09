@@ -19,12 +19,12 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 container mx-auto px-4 py-16 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl mb-6">
-            Cambridge University Malaysia
+            Cambridge University 
             <br />
-            <span className="text-blue-600">and Singapore Association</span>
+            <span className="text-blue-600">Scientific Society</span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-8">
-            Welcome to the Cambridge University Malaysia and Singapore Association (CUMSA).
+            Welcome to the Cambridge University Scientific Society (SciSoc).
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg">
@@ -41,16 +41,10 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-foreground mb-6">
-              Welcome to the Cambridge University Malaysia and Singapore Association (CUMSA).
+              Welcome to the Cambridge University Scientific Society (SciSoc).
             </p>
             <p className="text-muted-foreground mb-8">
-              Founded in 1948, CUMSA aims to bring together members of the Malaysian and Singaporean communities in Cambridge, fostering
-              friendships and connections with those from both Malaysia and Singapore alike. Over the years, CUMSA has built a strong
-              network of current students and alumni in Singapore, the United Kingdom and globally.
-            </p>
-            <p className="text-muted-foreground mb-12">
-              CUMSA holds a number of events throughout the year for its members and alumni with the intention of creating a social environment
-              with a South-East Asian flair. We also hold career-focused events for our members in a wide variety of industries.
+              The Cambridge University Scientific Society (SciSoc) exists “to promote all branches of science and to make science accessible to all members of the University”. We do this mainly via weekly talks, on a wide range of subjects, by the UK’s and world’s most distinguished scientists, giving our members the opportunity to engage with great minds and explore ground-breaking scientific methods. Additionally, we organise garden parties, dinners and other social events.
             </p>
           </div>
         </div>
@@ -67,7 +61,7 @@ export default function HomePage() {
                 <CardHeader className="flex-shrink-0">
                   <div className="w-full h-64 bg-orange-100 rounded-lg mb-4 relative overflow-hidden">
                     <Image
-                      src="/dinner.jpg" // Replace with actual image
+                      src="/event.jpg" // Replace with actual image
                       alt="About us"
                       fill
                       className="object-cover"
@@ -83,12 +77,12 @@ export default function HomePage() {
               </Card>
             </Link>
 
-            <Link href="/resources/freshers">
+            <Link href="/resources/guides">
               <Card className="cursor-pointer transition-transform hover:scale-105 hover:shadow-lg h-[26rem] flex flex-col">
                 <CardHeader className="flex-shrink-0">
                   <div className="w-full h-64 bg-amber-100 rounded-lg mb-4 relative overflow-hidden">
                     <Image
-                      src="/resources.png" // Replace with actual image
+                      src="/resources.jpg" // Replace with actual image
                       alt="Resources"
                       fill
                       className="object-cover"
@@ -109,7 +103,7 @@ export default function HomePage() {
                 <CardHeader className="flex-shrink-0">
                   <div className="w-full h-64 bg-yellow-100 rounded-lg mb-4 relative overflow-hidden">
                     <Image
-                      src="/sponsors.jpg" // Replace with actual image
+                      src="/sponsor.jpg" // Replace with actual image
                       alt="Sponsors"
                       fill
                       className="object-cover"

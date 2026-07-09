@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image"
-import Link from "next/link"
-import { getPlatinumSponsors, getGoldSponsors } from "@/data/sponsors";
+import Image from "next/image";
+import Link from "next/link";
+import { currentPatrons, honoraryMember } from "@/data/patrons";
+import { getGoldSponsors, getPlatinumSponsors } from "@/data/sponsors";
 
 // Custom social media icons since Heroicons doesn't have specific social media icons
 const FacebookIcon = () => (
@@ -26,6 +27,18 @@ const LinkedInIcon = () => (
 const InstagramIcon = () => (
   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
     <path fillRule="evenodd" d="M12.017 0C8.396 0 7.916.016 6.684.078 5.454.14 4.64.367 3.936.675a5.918 5.918 0 00-2.134 1.39 5.918 5.918 0 00-1.391 2.134C.367 4.64.14 5.454.078 6.684.016 7.916 0 8.396 0 12.017c0 3.624.016 4.104.078 5.336.062 1.23.289 2.044.597 2.748.328.813.777 1.503 1.391 2.134a5.918 5.918 0 002.134 1.391c.704.308 1.518.535 2.748.597 1.232.062 1.712.078 5.336.078 3.624 0 4.104-.016 5.336-.078 1.23-.062 2.044-.289 2.748-.597a5.918 5.918 0 002.134-1.391 5.918 5.918 0 001.391-2.134c.308-.704.535-1.518.597-2.748.062-1.232.078-1.712.078-5.336 0-3.624-.016-4.104-.078-5.336-.062-1.23-.289-2.044-.597-2.748a5.918 5.918 0 00-1.391-2.134A5.918 5.918 0 0020.683.675c-.704-.308-1.518-.535-2.748-.597C16.704.016 16.224 0 12.017 0zM12.017 2.162c3.563 0 3.988.016 5.193.077 1.253.057 1.933.27 2.385.448.6.233 1.026.511 1.475.96.449.449.727.875.96 1.475.178.452.391 1.132.448 2.385.061 1.205.077 1.63.077 5.193s-.016 3.988-.077 5.193c-.057 1.253-.27 1.933-.448 2.385-.233.6-.511 1.026-.96 1.475-.449.449-.875.727-1.475.96-.452.178-1.132.391-2.385.448-1.205.061-1.63.077-5.193.077s-3.988-.016-5.193-.077c-1.253-.057-1.933-.27-2.385-.448-.6-.233-1.026-.511-1.475-.96-.449-.449-.727-.875-.96-1.475-.178-.452-.391-1.132-.448-2.385-.061-1.205-.077-1.63-.077-5.193s.016-3.988.077-5.193c.057-1.253.27-1.933.448-2.385.233-.6.511-1.026.96-1.475.449-.449.875-.727 1.475-.96.452-.178 1.132-.391 2.385-.448 1.205-.061 1.63-.077 5.193-.077zm0 3.678a6.177 6.177 0 100 12.354 6.177 6.177 0 000-12.354zM12.017 9a3.177 3.177 0 110 6.354A3.177 3.177 0 0112.017 9zm6.232-3.244a1.444 1.444 0 11-2.888 0 1.444 1.444 0 012.888 0z" clipRule="evenodd" />
+  </svg>
+);
+
+const TwitterIcon = () => (
+  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M18.244 2H21.6l-7.33 8.38L23 22h-6.8l-5.31-6.94L4.8 22H1.44l7.82-8.94L1 2h6.97l4.82 6.35L18.244 2Zm-1.19 18h1.86L7.96 3.92H6.01L17.054 20Z" />
+  </svg>
+);
+
+const YoutubeIcon = () => (
+  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M21.8 7.2a3.1 3.1 0 0 0-2.2-2.2C17.7 4.5 12 4.5 12 4.5s-5.7 0-7.6.5a3.1 3.1 0 0 0-2.2 2.2A32.7 32.7 0 0 0 1.7 12a32.7 32.7 0 0 0 .5 4.8 3.1 3.1 0 0 0 2.2 2.2c1.9.5 7.6.5 7.6.5s5.7 0 7.6-.5a3.1 3.1 0 0 0 2.2-2.2 32.7 32.7 0 0 0 .5-4.8 32.7 32.7 0 0 0-.5-4.8ZM9.8 15.3V8.7L15.4 12l-5.6 3.3Z" />
   </svg>
 );
 
@@ -56,198 +69,191 @@ const TelegramIcon = () => (
 export default function Footer() {
   const platinumSponsors = getPlatinumSponsors();
   const goldSponsors = getGoldSponsors();
-  const allPremiumSponsors = [...platinumSponsors, ...goldSponsors];
+  const featuredSponsors = [...platinumSponsors, ...goldSponsors];
 
   return (
     <>
-      {/* Sponsor Carousel Section */}
-      {allPremiumSponsors.length > 0 && (
-        <div className="bg-muted border-t border-border py-12">
+      {featuredSponsors.length > 0 && (
+        <div className="border-t border-border bg-muted/70 py-10">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="mb-5 flex items-end justify-between gap-4">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#00827e]">
+                  Sponsors
+                </p>
+                <h3 className="text-xl font-semibold text-foreground sm:text-2xl">
+                  Supporting the Cambridge University Scientific Society
+                </h3>
+              </div>
+              <Link href="/sponsors" className="text-sm font-medium text-[#00827e] hover:underline">
+                View all sponsors
+              </Link>
+            </div>
 
-              {/* Platinum Sponsors */}
-              {platinumSponsors.length > 0 && (
-                <div className="flex flex-col">
-                  <h3 className="text-lg font-semibold text-foreground mb-6">Platinum Sponsors</h3>
-                  <div className="relative overflow-hidden">
-                    <div className="flex space-x-8">
-                      {/* Duplicate sponsors for seamless loop */}
-                      {[...platinumSponsors].map((sponsor, index) => (
-                        <Link
-                          key={`${sponsor.id}-${index}`}
-                          href={`/sponsors/${sponsor.slug}`}
-                          className="flex-shrink-0"
-                          title={sponsor.name}
-                        >
-                          <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow w-32 h-20 flex items-center justify-center">
-                            <Image
-                              src={sponsor.picture}
-                              alt={sponsor.name}
-                              width={100}
-                              height={60}
-                              className="object-contain max-w-full max-h-full"
-                            />
-                          </div>
-                        </Link>
-                      ))}
+            <div className="overflow-hidden rounded-2xl border border-border/60 bg-background px-6 py-6 shadow-sm">
+              <div className="flex w-max items-center gap-6 animate-scroll">
+                {[...featuredSponsors, ...featuredSponsors, ...featuredSponsors, ...featuredSponsors].map((sponsor, index) => (
+                  <Link
+                    key={`${sponsor.id}-${index}`}
+                    href={`/sponsors#${sponsor.id}`}
+                    className="flex-shrink-0"
+                    title={sponsor.name}
+                  >
+                    <div className="flex h-20 w-36 items-center justify-center rounded-xl bg-white px-4 py-3 ring-1 ring-border/60">
+                      <Image
+                        src={sponsor.picture}
+                        alt={sponsor.name}
+                        width={120}
+                        height={70}
+                        className="max-h-full max-w-full object-contain"
+                      />
                     </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Gold Sponsors */}
-              {goldSponsors.length > 0 && (
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-6">Gold Sponsors</h3>
-                  <div className="relative overflow-hidden">
-                    <div className="flex space-x-8 animate-scroll">
-                      {/* Duplicate sponsors for seamless loop */}
-                      {[...goldSponsors, ...goldSponsors].map((sponsor, index) => (
-                        <Link
-                          key={`${sponsor.id}-${index}`}
-                          href={`/sponsors/${sponsor.slug}`}
-                          className="flex-shrink-0"
-                          title={sponsor.name}
-                        >
-                          <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow w-32 h-20 flex items-center justify-center">
-                            <Image
-                              src={sponsor.picture}
-                              alt={sponsor.name}
-                              width={100}
-                              height={60}
-                              className="object-contain max-w-full max-h-full"
-                            />
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              )}
-
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       )}
 
-      <footer className="bg-[#00827e] text-white py-6">
+      <footer className="bg-[#00827e] py-8 text-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-start">
-            <div className="mb-8 md:mb-0 flex">
-              <div className="flex items-center justify-center space-x-2">
-                <Image
-                  src="/favicon.ico"
-                  alt="CUMSA Logo"
-                  width={40}
-                  height={40}
-                  className="rounded"
-                />
+          <div className="space-y-8">
+            <section className="rounded-2xl border border-white/15 bg-white/5 px-5 py-6 sm:px-6">
+              <div className="mx-auto max-w-3xl space-y-5 text-center">
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white/80">
+                  Patrons
+                </p>
+                <p className="text-sm leading-6 text-white/90 sm:text-base">
+                  {honoraryMember.title}: <span className="border-b border-white/35">{honoraryMember.name}</span>
+                </p>
+                <div className="space-y-2 text-sm leading-6 text-white/90 sm:text-base">
+                  <p className="font-semibold text-white">Current Patrons</p>
+                  <div className="flex flex-col items-center gap-1">
+                    {currentPatrons.map((patron) => (
+                      <p key={patron.name}>
+                        <span className="border-b border-white/35">{patron.name}</span>
+                        {patron.honors ? <span className="text-white/80"> {patron.honors}</span> : null}
+                      </p>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div className="items-center justify-center mx-4">
-                <h3>
-                  Cambridge University Malaysia
-                </h3>
-                <h3>
-                  and Singapore Association
-                </h3>
-              </div>
-              <div className="flex items-center justify-center space-x-2 gap-4 ml-5">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="p-2 text-white hover:text-gray-300 transition-colors"
-                  asChild
-                  title="LinkTree"
-                >
-                  <a href="https://linktr.ee/cumsa_">
-                    <span className="sr-only">LinkTree</span>
-                    <LinkTreeIcon />
-                  </a>
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="p-2 text-white hover:text-gray-300 transition-colors"
-                  asChild
-                  title="Instagram"
-                >
-                  <a href="https://www.instagram.com/cumsa_">
-                    <span className="sr-only">Instagram</span>
-                    <InstagramIcon />
-                  </a>
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="p-2 text-white hover:text-gray-300 transition-colors"
-                  asChild
-                  title="Telegram Broadcast Channel"
-                >
-                  <a href="https://t.me/+OS3sabCChl1mMTU9">
-                    <span className="sr-only">Telegram Broadcast Channel</span>
-                    <TelegramIcon />
-                  </a>
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="p-2 text-white hover:text-gray-300 transition-colors"
-                  asChild
-                  title="Telegram Community"
-                >
-                  <a href="https://t.me/+bO_f4fB-adM4ZDQ1">
-                    <span className="sr-only">Telegram Community</span>
-                    <TelegramIcon />
-                  </a>
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="p-2 text-white hover:text-gray-300 transition-colors"
-                  asChild
-                  title="Facebook"
-                >
-                  <a href="https://www.facebook.com/cumsapage">
-                    <span className="sr-only">Facebook</span>
-                    <FacebookIcon />
-                  </a>
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="p-2 text-white hover:text-gray-300 transition-colors"
-                  asChild
-                  title="LinkedIn"
-                >
-                  <a href="https://www.linkedin.com/company/alumnicambridge/">
-                    <span className="sr-only">Linkedin</span>
-                    <LinkedInIcon />
-                  </a>
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="p-2 text-white hover:text-gray-300 transition-colors"
-                  asChild
-                  title="Email"
-                >
-                  <a href="mailto:secretary@cumsa.org.uk">
-                    <span className="sr-only">Email</span>
-                    <EmailIcon />
-                  </a>
-                </Button>
-              </div>
-            </div>
+            </section>
 
-            <div className=" text-center">
-              <div className="text-sm text-gray-400">
-                <p>© Copyright 2025 CUMSA.</p>
-                <p>All rights reserved</p>
+            <div className="flex flex-col gap-4 border-t border-white/15 pt-6 md:flex-row md:items-end md:justify-between">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="/logo_white.png"
+                    alt="SciSoc Logo"
+                    width={40}
+                    height={40}
+                    className="rounded"
+                  />
+                  <div>
+                    <h3 className="text-base font-semibold leading-tight">
+                      Cambridge University Scientific Society
+                    </h3>
+                    <p className="text-sm text-white/80">
+                      Cambridge, United Kingdom
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="p-2 text-white transition-colors hover:text-gray-300"
+                    asChild
+                    title="LinkTree"
+                  >
+                    <a href="https://linktr.ee/camscisoc">
+                      <span className="sr-only">LinkTree</span>
+                      <LinkTreeIcon />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="p-2 text-white transition-colors hover:text-gray-300"
+                    asChild
+                    title="Instagram"
+                  >
+                    <a href="https://www.instagram.com/cambridgescisoc">
+                      <span className="sr-only">Instagram</span>
+                      <InstagramIcon />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="p-2 text-white transition-colors hover:text-gray-300"
+                    asChild
+                    title="YouTube"
+                  >
+                    <a href="https://www.youtube.com/c/cambridgescisoc">
+                      <span className="sr-only">YouTube</span>
+                      <YoutubeIcon />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="p-2 text-white transition-colors hover:text-gray-300"
+                    asChild
+                    title="Twitter"
+                  >
+                    <a href="https://twitter.com/CambridgeSciSoc">
+                      <span className="sr-only">Twitter</span>
+                      <TwitterIcon />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="p-2 text-white transition-colors hover:text-gray-300"
+                    asChild
+                    title="Facebook"
+                  >
+                    <a href="https://www.facebook.com/camscisoc/">
+                      <span className="sr-only">Facebook</span>
+                      <FacebookIcon />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="p-2 text-white transition-colors hover:text-gray-300"
+                    asChild
+                    title="LinkedIn"
+                  >
+                    <a href="https://www.linkedin.com/company/19138277/">
+                      <span className="sr-only">Linkedin</span>
+                      <LinkedInIcon />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="p-2 text-white transition-colors hover:text-gray-300"
+                    asChild
+                    title="Email"
+                  >
+                    <a href="mailto:president@scisoc.com">
+                      <span className="sr-only">Email</span>
+                      <EmailIcon />
+                    </a>
+                  </Button>
+                </div>
+              </div>
+              <div className="text-center text-sm text-white/70 md:text-right">
+                <p>© 2026 Cambridge University Scientific Society.</p>
+                <p>All rights reserved.</p>
               </div>
             </div>
           </div>
-
         </div>
       </footer>
     </>

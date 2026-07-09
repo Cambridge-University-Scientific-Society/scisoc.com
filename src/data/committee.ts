@@ -11,134 +11,144 @@ export interface CommitteeMember {
 
 export const committeeData: CommitteeMember[] = [
   {
-    id: "president",
-    name: "Albert Chieng",
-    position: "President",
-    subject: "Natural Sciences",
-    college: "Sidney Sussex College",
+    id: "president1",
+    name: "Alexander Gillan",
+    position: "Co-Presidents",
+    subject: "Natural Sciences (Chemical)",
+    college: "Trinity Hall",
     year: "3rd Year",
-    photo: "/committee/1.PNG",
-    email: "president@cumsa.org"
+    photo: "/committee/Alexander.jpeg",
+    email: "president@scisoc.com"
   },
   {
-    id: "vice-president",
-    name: "Alldon Garren Tan",
-    position: "Vice President",
-    subject: "Law",
-    college: "Christ's College",
+    id: "president2",
+    name: "Samuel Li",
+    position: "Co-Presidents",
+    subject: "Natural Sciences (Biological)",
+    college: "St John's College",
     year: "3rd Year",
-    photo: "/committee/2.PNG",
-    email: "vice-president@cumsa.org"
+    photo: "/committee/Samuel.jpg",
+    email: "president@scisoc.com"
+  },
+  {
+    id: "president3",
+    name: "Nicholas Law",
+    position: "Co-Presidents",
+    subject: "Medicine",
+    college: "Trinity College",
+    year: "3rd Year",
+    photo: "/committee/Nicholas.jpg",
+    email: "president@scisoc.com"
   },
   {
     id: "secretary",
-    name: "Isabel Jade Huang",
+    name: "Samud Shetty",
     position: "Secretary",
-    subject: "Human, Social, & Political Sciences",
-    college: "Downing College",
-    year: "2nd Year",
-    photo: "/committee/3.PNG",
-    email: "secretary@cumsa.org"
+    subject: "Natural Sciences (Biological)",
+    college: "Lucy Cavendish College",
+    year: "3rd Year",
+    photo: "/committee/Samud.jpg",
+    email: "secretary@scisoc.com"
   },
   {
     id: "treasurer",
-    name: "Daniel Choo",
+    name: "Hew Yu Heng",
     position: "Treasurer",
-    subject: "Computer Science",
+    subject: "Natural Sciences (Biological)",
+    college: "Emmanuel College",
+    year: "4th Year",
+    photo: "/committee/Yuheng.jpg",
+    email: "treasurer@scisoc.com"
+  },
+  {
+    id: "publicity1",
+    name: "Barry Luo",
+    position: "Publicity Officer",
+    subject: "Natural Sciences (Biological)",
+    college: "Trinity College",
+    year: "2nd Year",
+    photo: "/committee/Barry.jpg",
+    email: "publicity@scisoc.com"
+  },
+  {
+    id: "publicity2",
+    name: "Kaiwen Tan",
+    position: "Publicity Officer",
+    subject: "Natural Sciences (Biological)",
+    college: "Hughes Hall",
+    year: "2nd Year",
+    photo: "/committee/Kaiwen.jpg",
+    email: "publicity@scisoc.com"
+  },
+  {
+    id: "events1",
+    name: "Timothy Chek",
+    position: "Events Officer",
+    subject: "Natural Sciences (Physical)",
+    college: "Christ College",
+    year: "2nd Year",
+    photo: "/committee/Timothy.jpg",
+    email: "events@scisoc.com"
+  },
+  {
+    id: "events2",
+    name: "Yu Tong Lim",
+    position: "Events Officer",
+    subject: "Natural Sciences (Physical)",
+    college: "Emmanuel College",
+    year: "2nd Year",
+    photo: "/committee/YuTong.jpg",
+    email: "events@scisoc.com"
+  },
+  {
+    id: "logistic1",
+    name: "Owen Ong",
+    position: "Logistics Officer",
+    subject: "Natural Sciences (Biological)",
+    college: "Emmanuel College",
+    year: "2nd Year",
+    photo: "/committee/Owen.jpg",
+    email: "logistics@scisoc.com"
+  },
+  {
+    id: "logistics2",
+    name: "George Zhou",
+    position: "Logistics Officer",
+    subject: "Medicine",
     college: "Christ's College",
-    year: "2nd Year",
-    photo: "/committee/4.PNG",
-    email: "treasurer@cumsa.org"
-  },
-  {
-    id: "sports",
-    name: "Aneish Jose Sawney",
-    position: "Sports Secretary",
-    subject: "Economics",
-    college: "St Edmund's College",
-    year: "2nd Year",
-    photo: "/committee/5.PNG",
-    email: "sports@cumsa.org"
-  },
-  {
-    id: "publicity",
-    name: "Cedric Khua",
-    position: "Publicity Secretary",
-    subject: "Computer Science",
-    college: "Wolfson College",
-    year: "2nd Year",
-    photo: "/committee/6.PNG",
-    email: "publicity@cumsa.org"
-  },
-  {
-    id: "access",
-    name: "Abdul Mateen Kamal",
-    position: "Access & Outreach Officer",
-    subject: "History & Politics",
-    college: "Wolfson College",
-    year: "2nd Year",
-    photo: "/committee/7.PNG",
-    email: "access@cumsa.org"
+    year: "3rd Year",
+    photo: "/committee/George.png",
+    email: "logistics@scisoc.com"
   },
   {
     id: "sponsorships",
-    name: "Chloe Young",
-    position: "Sponsorships & Careers Officer",
-    subject: "Natural Sciences",
-    college: "Girton College",
-    year: "2nd Year",
-    photo: "/committee/8.PNG",
-    email: "sponsorships@cumsa.org"
+    name: "Irina Fok",
+    position: "Sponsorships Officer",
+    subject: "Natural Sciences (Biological)",
+    college: "Corpus Christi College",
+    year: "3rd Year",
+    photo: "/committee/Irina.jpg",
+    email: "sponsorship@scisoc.com"
   },
   {
     id: "database",
     name: "Xavier Yeo",
-    position: "Database Officer",
+    position: "Technical Officer",
     subject: "Computer Science",
     college: "Hughes Hall",
-    year: "2nd Year",
-    photo: "/committee/9.PNG",
-    email: "database@cumsa.org"
+    year: "3rd Year",
+    photo: "/committee/Xavier.jpg",
+    email: "tech@scisoc.com"
   },
   {
-    id: "events1",
-    name: "Liang Jing Hao",
-    position: "Events Officer",
-    subject: "Law",
-    college: "Wolfson College",
-    year: "2nd Year",
-    photo: "/committee/10.PNG",
-    email: "events@cumsa.org"
-  },
-  {
-    id: "events2",
-    name: "Whang Shih Ee",
-    position: "Events Officer",
-    subject: "Engineering",
-    college: "Lucy Cavendish College",
-    year: "2nd Year",
-    photo: "/committee/11.PNG",
-    email: "events@cumsa.org"
-  },
-  {
-    id: "events3",
-    name: "Zhang Chenxi",
-    position: "Events Officer",
-    subject: "Mathematics",
+    id: "speakers",
+    name: "Vanisha Agrawal",
+    position: "Speakers Affair Officer",
+    subject: "Natural Sciences (Biological)",
     college: "St Catherine's College",
     year: "2nd Year",
-    photo: "/committee/12.PNG",
-    email: "events@cumsa.org"
-  },
-  {
-    id: "phd",
-    name: "Hou Boyang",
-    position: "Graduate Representative",
-    subject: "PhD History",
-    college: "Churchill College",
-    year: "2nd Year (PhD)",
-    photo: "/committee/13.PNG",
-    email: "gradreps@cumsa.org"
+    photo: "/committee/Vanisha.jpg",
+    email: "speakers@scisoc.com"
   },
 ];
 

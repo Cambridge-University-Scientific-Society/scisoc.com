@@ -16,7 +16,7 @@ export default function MembershipPage() {
 
             <ul className="list-disc space-y-2 pl-8">
               <li><strong>Free entry to all SciSoc talks</strong> for the rest of your life <em>(£4 for non-members)</em></li>
-              <li><strong>Reciprocal free life membership</strong> to the <Link href="https://www.oxscisoc.org/" className="font-semibold text-[#00827e] hover:underline">Oxford University Scientific Society</Link>, thanks to a special membership agreement</li>
+              <li><strong>Reciprocal free life membership</strong> to the <Link href="https://ouscisoc.wordpress.com/" className="font-semibold text-[#00827e] hover:underline">Oxford University Scientific Society</Link>, thanks to a special membership agreement</li>
               <li><strong>Member&apos;s discounted prices</strong> for the <Link href="/events/garden-party" className="font-semibold text-[#00827e] hover:underline">Garden Party</Link>, the <Link href="/events/founders-dinner" className="font-semibold text-[#00827e] hover:underline">Annual Founders&apos; Dinner</Link>, and many other social events</li>
               <li><strong>Priority entry</strong> to oversubscribed talks and events</li>
               <li>Participate in our <strong>Member&apos;s Quiz</strong> to win special prizes at the end of every term <em>(more information to be announced on the first talk of each term)</em></li>
@@ -37,13 +37,13 @@ export default function MembershipPage() {
 
             <div className="flex flex-col items-center gap-4 pt-2 sm:flex-row sm:justify-start">
               <Link
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScnpePkpv_ZbF1-5sEY7vOFY5F65cROVmXxsC2doCGhaS-yfg/viewform?usp=dialog"
                 className="inline-flex min-h-[128px] min-w-[320px] items-center justify-center rounded-full border-2 border-[#1c8f94] bg-[#d7e7e2] px-10 py-6 text-center text-2xl font-semibold text-[#1c8f94] transition-transform hover:scale-[1.02]"
               >
                 Sign up membership
               </Link>
               <Link
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdUbXz2qIBhiELvvOOqVghRfDRGKIj7FtZOvIJYjbVNH1IA_A/viewform?usp=publish-editor"
                 className="inline-flex min-h-[128px] min-w-[320px] items-center justify-center rounded-full border-2 border-[#1c8f94] bg-[#d7e7e2] px-10 py-6 text-center text-2xl font-semibold text-[#1c8f94] transition-transform hover:scale-[1.02]"
               >
                 Sign up mailing list
