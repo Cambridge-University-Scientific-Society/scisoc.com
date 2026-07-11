@@ -27,7 +27,7 @@ export const sponsorsData: Sponsor[] = [
   {
     id: "twist",
     name: "Twist",
-    tier: "silver",
+    tier: "gold",
     picture: "/sponsors/twist-logo.png",
   },
 ];

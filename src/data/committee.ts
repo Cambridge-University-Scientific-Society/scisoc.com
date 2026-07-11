@@ -57,7 +57,7 @@ export const committeeData: CommitteeMember[] = [
     subject: "Natural Sciences (Biological)",
     college: "Emmanuel College",
     year: "4th Year",
-    photo: "/committee/Yuheng.jpg",
+    photo: "/committee/YuHeng.jpg",
     email: "treasurer@scisoc.com"
   },
   {
