@@ -35,7 +35,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-2">
             <Image
               src="/favicon.ico"
-              alt="CUMSA Logo"
+              alt="SciSoc Logo"
               width={40}
               height={40}
               className="rounded"

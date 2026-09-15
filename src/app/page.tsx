@@ -11,7 +11,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <Image
             src="/banner.jpg"
-            alt="CUMSA Group Photo"
+            alt="Scisoc Group Photo"
             fill
             className="object-cover opacity-30"
             priority
