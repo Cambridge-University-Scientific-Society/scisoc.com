@@ -14,7 +14,7 @@ export default function FoundersDinnerPage() {
       ]}
       intro={
         <p>
-          Held in Lent Term (January - March), the Annual Founders' Dinner celebrates the work of the outgoing <Link href="/about/committee" className="font-semibold text-[#00827e] hover:underline">Committee</Link> and the achievements of the Society over the past year. The Committee, past Presidents, Members of the Society, sponsors and members of the Academic Advisory Board come together for a formal dinner in a Cambridge College, joined by a Guest-of-Honour, who gives a short speech during the event.
+          Held in Lent Term (January - March), the Annual Founders&apos; Dinner celebrates the work of the outgoing <Link href="/about/committee" className="font-semibold text-[#00827e] hover:underline">Committee</Link> and the achievements of the Society over the past year. The Committee, past Presidents, Members of the Society, sponsors and members of the Academic Advisory Board come together for a formal dinner in a Cambridge College, joined by a Guest-of-Honour, who gives a short speech during the event.
         </p>
       }
     />

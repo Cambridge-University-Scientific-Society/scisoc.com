@@ -23,7 +23,7 @@ export default function CommitteePage() {
             <div className="space-y-6 rounded-2xl border border-border/60 bg-card p-6 shadow-sm">
               <div className="space-y-2">
                 <p className="text-base leading-7">
-                  Senior Treasurer: Dr David Norman (Christ's)
+                  Senior Treasurer: Dr David Norman (Christ&apos;s)
                 </p>
               </div>
 

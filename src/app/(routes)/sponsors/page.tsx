@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { getPlatinumSponsors, getGoldSponsors, getSilverSponsors } from "@/data/sponsors";
 

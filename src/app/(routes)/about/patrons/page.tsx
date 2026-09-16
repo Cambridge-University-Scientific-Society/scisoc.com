@@ -31,7 +31,6 @@ export default function PatronsPage() {
                       label={honoraryMember.name}
                       honors={honoraryMember.honors}
                     description={[honoraryMember.description]}
-                    isHonorary
                   />
                 </div>
               </div>
@@ -87,14 +86,12 @@ function PatronDisclosure({
   description,
   tributeTitle,
   tributeParagraphs,
-  isHonorary = false,
 }: {
   label: string;
   honors: string;
   description: string[];
   tributeTitle?: string;
   tributeParagraphs?: string[];
-  isHonorary?: boolean;
 }) {
   return (
     <details className="group border-b border-border/60 pb-4">

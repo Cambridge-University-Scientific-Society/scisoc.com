@@ -20,7 +20,11 @@ export function EventCarousel({ slides }: EventCarouselProps) {
     return null;
   }
 
-  const currentSlide = slides[activeIndex];
+  const currentSlide = slides[activeIndex] ?? slides[0];
+
+  if (!currentSlide) {
+    return null;
+  }
 
   const goToPrevious = () => {
     setActiveIndex((current) => (current === 0 ? slides.length - 1 : current - 1));

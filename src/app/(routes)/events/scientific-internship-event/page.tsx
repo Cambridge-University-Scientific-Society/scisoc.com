@@ -62,7 +62,7 @@ export default function ScientificInternshipEventPage() {
             <ul className="list-disc list-inside space-y-1">
               <li>MIT, USA</li>
               <li>University of Pennsylvania (UPenn), USA</li>
-              <li>The Amgen Scholars' Programme (ETH Zurich, Karolinska Institutet, LMU Munich)</li>
+              <li>The Amgen Scholars&apos; Programme (ETH Zurich, Karolinska Institutet, LMU Munich)</li>
               <li>ISTA, Austria</li>
               <li>EMBL Grenoble, France</li>
               <li>UTRIP, University of Tokyo, Japan</li>
