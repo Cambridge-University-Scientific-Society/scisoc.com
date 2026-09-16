@@ -121,7 +121,7 @@ export default function EventsPage() {
             </div>
           </div>
 
-          <h3 className="text-center text-4xl font-bold mb-4 text-foreground">Featured Events</h3>
+          {/* <h3 className="text-center text-4xl font-bold mb-4 text-foreground">Featured Events</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {events.map((event) => (
               <Card key={event.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
@@ -147,7 +147,7 @@ export default function EventsPage() {
                 </CardHeader>
               </Card>
             ))}
-          </div>
+          </div> */}
 
           <div className="text-center mt-16 p-8 bg-muted/50 rounded-lg">
             <h2 className="text-2xl font-bold mb-4 text-foreground">Join Us at Our Next Event</h2>
