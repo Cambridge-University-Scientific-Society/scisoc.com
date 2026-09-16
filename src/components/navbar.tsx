@@ -153,6 +153,16 @@ export default function Navbar() {
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
+                    <Link href="/about/committee" className="cursor-pointer">
+                      Committee
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/about/past-committees" className="cursor-pointer">
+                      Past Committees
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
                     <Link href="/about/patrons" className="cursor-pointer">
                       Patrons
                     </Link>
