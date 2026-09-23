@@ -13,7 +13,7 @@ export const committeeData: CommitteeMember[] = [
   {
     id: "president1",
     name: "Alexander Gillan",
-    position: "Co-Presidents",
+    position: "Co-President",
     subject: "Natural Sciences (Chemical)",
     college: "Trinity Hall",
     year: "3rd Year",
@@ -23,7 +23,7 @@ export const committeeData: CommitteeMember[] = [
   {
     id: "president2",
     name: "Samuel Li",
-    position: "Co-Presidents",
+    position: "Co-President",
     subject: "Natural Sciences (Biological)",
     college: "St John's College",
     year: "3rd Year",
@@ -33,7 +33,7 @@ export const committeeData: CommitteeMember[] = [
   {
     id: "president3",
     name: "Nicholas Law",
-    position: "Co-Presidents",
+    position: "Co-President",
     subject: "Medicine",
     college: "Trinity College",
     year: "3rd Year",

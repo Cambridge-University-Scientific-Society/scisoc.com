@@ -19,6 +19,12 @@ export default function ScientificInternshipEventPage() {
         <h2 className="text-2xl font-light text-muted-foreground">Past SIE/AIEs</h2>
         <div className="space-y-4">
           <p>
+            The 9th SIE was held on 8 Nov 2025 at St John&apos;s College. This year, we had 11 speakers across 4 categories sharing about internships within the UK, Europe, America and China. We also heard from our industry partners, who spoke about internships and opportunities in conservation and finance. 
+          </p>
+          <p>
+            The 8th SIE was held on 2 Nov 2024 at St John&apos;s College. This year, the event was expanded to include non-research internships in industry, with presentations from both students as well as our industry partners in pharma and IP law. We had a total of 12 speakers across 4 categories, sharing about internships within the UK, Europe and across the whole world, ranging from America, Japan and Brunei.
+          </p>
+          <p>
             The 7th AIE was held on 4 Nov 2023, in collaboration with TCSS and CU Physics Society (CUPS), again held at the BMS Lecture Theatre. The event format remained approximately the same, with 11 speakers and 4 categories, sharing about internships within the UK, Europe and across the whole world, ranging from America, China and to New Zealand.
           </p>
           <p>

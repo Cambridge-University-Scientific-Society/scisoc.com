@@ -7,9 +7,7 @@ export default function ConstitutionPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-16">
         <article className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-muted-foreground mb-10">
-            Constitution
-          </h1>
+          <h1 className="text-4xl font-bold text-center mb-8">Constitution</h1>
 
           <section className="space-y-10 text-lg leading-8 text-muted-foreground">
             <div className="space-y-4 max-w-4xl">

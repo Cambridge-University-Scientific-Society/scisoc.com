@@ -52,9 +52,23 @@ export default function GuidesPage() {
                   <h4 className="font-semibold mb-3">Note</h4>
                   <div className="space-y-2">
                   <div className="space-y-4 text-muted-foreground">
-                    <p> 
-                        To help demystify the Natural Sciences (NST or NatSci) course, SciSoc has produced ‘The SciSoc Guide to NST 1A’. The guide was written with students for students – in it, you will find frank and honest assessments of the courses offered in your first year studying NatSci as well as hopefully helpful advice. Information contained within the guide should be accurate as of Summer 2025. If there are errors, please do let us know by whichever means is most convenient for you. 
+                    <p>
+                      Due to structural changes to the Natural Sciences Part IA course starting from AY 2026/27, the biological subjects available to the incoming year group will differ from those mentioned in this guide.
                     </p>
+
+                    <p>Subjects Removed:</p>
+                    <ul className="list-disc pl-5">
+                      <li>Biology of Cells</li>
+                      <li>Evolution and Behaviour</li>
+                      <li>Physiology of Organisms</li>
+                    </ul>
+
+                    <p>New Subjects:</p>
+                    <ul className="list-disc pl-5">
+                      <li>Biodiversity, Evolution and Ecology</li>
+                      <li>Biomedical Sciences</li>
+                      <li>Biomolecules and Cells</li>
+                    </ul>
                     </div>
                   </div>
                 </div>

@@ -5,9 +5,7 @@ export default function PastCommitteesPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-16">
         <article className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-muted-foreground mb-10">
-            Past Committees
-          </h1>
+          <h1 className="text-4xl font-bold text-center mb-8">Past Committees</h1>
 
           <div className="space-y-8">
             {pastCommittees.map((committee) => (

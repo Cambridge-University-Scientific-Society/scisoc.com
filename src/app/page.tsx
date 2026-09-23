@@ -21,7 +21,7 @@ export default function HomePage() {
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl mb-6">
             Cambridge University 
             <br />
-            <span className="text-blue-600">Scientific Society</span>
+            <span className="text-[#02a19c]">Scientific Society</span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-8">
             Welcome to the Cambridge University Scientific Society (SciSoc).

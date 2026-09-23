@@ -7,7 +7,7 @@ function SponsorLogoTile({
   sponsor: { id: string; name: string; picture: string };
 }) {
   return (
-    <div id={sponsor.id} className="flex h-44 items-center justify-center rounded-none border border-border/60 bg-card p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)] transition-transform duration-200 hover:-translate-y-1 hover:shadow-md bg-white">
+    <div id={sponsor.id} className="flex h-44 items-center justify-center rounded-none border border-border/60 bg-card p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]  bg-white">
         <Image
           src={sponsor.picture}
           alt={sponsor.name}
@@ -36,9 +36,7 @@ export default function SponsorsPage() {
       <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
         <article className="mx-auto max-w-6xl space-y-14">
           <header className="space-y-8">
-            <h1 className="text-5xl font-light tracking-tight text-foreground sm:text-6xl">
-              Sponsorship
-            </h1>
+            <h1 className="text-4xl font-bold text-center mb-8">Sponsorships</h1>
 
             <section className="space-y-4 text-lg leading-8 text-muted-foreground sm:text-xl sm:leading-9">
               <h2 className="text-3xl font-light tracking-tight text-foreground sm:text-[2.25rem]">

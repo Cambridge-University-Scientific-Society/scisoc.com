@@ -95,7 +95,7 @@ export default function Footer() {
                 {[...featuredSponsors, ...featuredSponsors, ...featuredSponsors, ...featuredSponsors].map((sponsor, index) => (
                   <Link
                     key={`${sponsor.id}-${index}`}
-                    href={`/sponsors#${sponsor.id}`}
+                    href="/sponsors"
                     className="flex-shrink-0"
                     title={sponsor.name}
                   >

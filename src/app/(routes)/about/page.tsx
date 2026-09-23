@@ -3,9 +3,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <article className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-muted-foreground mb-10">
-            About Us
-          </h1>
+          <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
 
           <section className="space-y-8 text-lg leading-8 text-muted-foreground">
             <div className="space-y-4">

@@ -5,9 +5,7 @@ export default function MembershipPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-10 md:py-14">
         <article className="mx-auto max-w-5xl space-y-8 text-muted-foreground">
-          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-muted-foreground">
-            Membership
-          </h1>
+          <h1 className="text-4xl font-bold text-center mb-8">Membership</h1>
 
           <section className="space-y-6 text-lg leading-8">
             <p>
@@ -19,7 +17,6 @@ export default function MembershipPage() {
               <li><strong>Reciprocal free life membership</strong> to the <Link href="https://ouscisoc.wordpress.com/" className="font-semibold text-[#00827e] hover:underline">Oxford University Scientific Society</Link>, thanks to a special membership agreement</li>
               <li><strong>Member&apos;s discounted prices</strong> for the <Link href="/events/garden-party" className="font-semibold text-[#00827e] hover:underline">Garden Party</Link>, the <Link href="/events/founders-dinner" className="font-semibold text-[#00827e] hover:underline">Annual Founders&apos; Dinner</Link>, and many other social events</li>
               <li><strong>Priority entry</strong> to oversubscribed talks and events</li>
-              <li>Participate in our <strong>Member&apos;s Quiz</strong> to win special prizes at the end of every term <em>(more information to be announced on the first talk of each term)</em></li>
               <li><strong>Voting and campaigning rights</strong> in the <Link href="/about/committee" className="font-semibold text-[#00827e] hover:underline">Executive Committee</Link> elections</li>
             </ul>
 
@@ -28,14 +25,16 @@ export default function MembershipPage() {
             </p>
 
             <div className="rounded-2xl border border-border bg-muted/30 p-6 text-base leading-7 text-foreground">
-              <p className="font-semibold">Name: CU Scientific Society Sort Code: 40-16-08 Acc No.: 72888130</p>
+              <p className="font-semibold">Name: CU Scientific Society</p>
+              <p className="font-semibold">Sort Code: 40-16-08</p>
+              <p className="font-semibold">Acc No.: 72888130</p>
             </div>
 
             <p>
-              <strong>Kindly fill up this <Link href="#" className="font-semibold text-[#00827e] hover:underline">form</Link></strong> so we can process your application. You can collect your official SciSoc membership card at any of our talks or events. To stay up-to-date with our talks and events, sign up for our mailing list below! (Note that you have to sign up for membership and mailing list separately.)
+              <strong>Kindly fill up this <Link href="#" className="font-semibold text-[#00827e] hover:underline">form</Link></strong> so we can process your application. You can collect your official SciSoc membership card at any of our talks or events. For those interested in our events but do not yet want to sign up for membership, do sign up for our mailing list for more information! (Members will be automatically added.)
             </p>
 
-            <div className="flex flex-col items-center gap-4 pt-2 sm:flex-row sm:justify-start">
+            <div className="flex flex-col items-center gap-4 pt-2 sm:flex-row sm:justify-center">
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLScnpePkpv_ZbF1-5sEY7vOFY5F65cROVmXxsC2doCGhaS-yfg/viewform?usp=dialog"
                 className="inline-flex min-h-[128px] min-w-[320px] items-center justify-center rounded-full border-2 border-[#1c8f94] bg-[#d7e7e2] px-10 py-6 text-center text-2xl font-semibold text-[#1c8f94] transition-transform hover:scale-[1.02]"

@@ -14,9 +14,7 @@ export function EventPageShell({ title, intro, slides, children }: EventPageShel
       <div className="container mx-auto px-4 py-12 md:py-16">
         <article className="mx-auto max-w-5xl space-y-10">
           <header className="space-y-6">
-            <h1 className="text-4xl md:text-5xl font-light tracking-tight text-muted-foreground">
-              {title}
-            </h1>
+            <h1 className="text-4xl font-bold text-center mb-8">{title}</h1>
             <div className="space-y-4 text-lg leading-8 text-muted-foreground">{intro}</div>
           </header>
 
