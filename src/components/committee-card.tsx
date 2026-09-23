@@ -29,9 +29,9 @@ export function CommitteeCard({ member }: CommitteeCardProps) {
       </CardHeader>
       <CardContent>
         <p className="text-muted-foreground mb-6">
-          Subject: {member.subject}<br/>
-          College: {member.college}<br/>
-          Year: {member.year}
+          {member.subject}<br/>
+          {member.college}<br/>
+          {member.year}
         </p>
         <Button variant="outline" size="sm" asChild>
           <a href={`mailto:${member.email}`}>
