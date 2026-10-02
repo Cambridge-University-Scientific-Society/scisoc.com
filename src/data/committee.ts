@@ -116,7 +116,7 @@ export const committeeData: CommitteeMember[] = [
     position: "Logistics Officer",
     subject: "Medicine",
     college: "Christ's College",
-    year: "3rd Year",
+    year: "2nd Year",
     photo: "/committee/George.png",
     email: "logistics@scisoc.com"
   },
